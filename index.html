@@ -1,6 +1,14 @@
 <!doctype html>
 <html>
 
+<!-- TODO
+Add links "decoration-amber-500"
+Icons under name
+Polygon images DR and DA
+Carousel
+3D stuff
+-->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,24 +24,49 @@
       }
     }
   </script>
+
+  <style type="text/tailwindcss">
+    /* bg-gradient-to-t from-yellow-200 via-pink-200 to-pink-400 */
+    /* bg-gradient-to-b from-rose-400 via-fuchsia-500 to-indigo-500 */
+    /* bg-gradient-to-b from-sky-400 via-rose-400 to-lime-400 */
+    /* bg-gradient-to-t from-yellow-100 via-yellow-300 to-yellow-500 */
+    .section-title {
+      @apply text-3xl md:text-5xl p-6 font-bold flex items-center justify-center bg-gradient-to-r from-slate-950 to-purple-500 bg-clip-text text-transparent;
+    }
+    .gradient-1 {
+      @apply bg-gradient-to-b from-pink-300 via-purple-300 to-indigo-400;
+    }
+    .gradient-2 {
+      @apply bg-gradient-to-b from-indigo-400 via-pink-400 to-pink-400
+    }
+    .gradient-3 {
+      @apply bg-gradient-to-b from-pink-400 via-fuchsia-500 to-rose-400
+    }
+    .gradient-4 {
+      @apply bg-gradient-to-b from-rose-400 via-rose-300 to-pink-400
+    }
+    .gradient-5 {
+      @apply bg-gradient-to-b from-pink-400 via-purple-400 to-indigo-500
+    }
+  </style>
 </head>
 
 <body>
-  <div id="title" class="bg-slate-800 min-h-full">
+  <div id="title" class="gradient-1 min-h-full">
     <h1
-      class="text-gray-900 text-6xl text-center pt-40 font-bold md:px-40 xl:px-96 bg-gradient-to-r from-pink-600 to-purple-800 bg-clip-text text-transparent">
+      class="text-gray-900 text-6xl text-center pt-40 font-bold md:px-40 xl:px-96 bg-gradient-to-r from-slate-950 to-purple-500 bg-clip-text text-transparent">
       Synthetic data for computer vision
       applications</h1>
     <h2 class="text-4xl pt-32 text-center text-amber-50">a PhD thesis by <br><span class="font-bold">Enric Moreu</span>
     </h2>
     <div class="text-center pt-32">
-      <button class="md:text-xl bg-blue-500 hover:bg-blue-700 text-amber-50 font-bold py-2 px-4 rounded text-center">
+      <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-amber-50 font-bold py-2 px-4 rounded text-center">
         Download thesis (40MB)
       </button>
     </div>
   </div>
 
-  <div id="abstract" class="bg-slate-900 min-h-fit">
+  <div id="abstract" class="gradient-2 min-h-fit">
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
@@ -49,8 +82,8 @@
     </div>
   </div>
 
-  <div id="domain-randomization" class="bg-green-800 min-h-fit">
-    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">Domain randomization</h1>
+  <div id="domain-randomization" class="gradient-3 min-h-fit">
+    <h1 class="section-title">Domain randomization</h1>
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
@@ -74,8 +107,8 @@
     </div>
   </div>
 
-  <div id="domain-adaptation" class="bg-purple-800 min-h-fit">
-    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">Domain adaptation</h1>
+  <div id="domain-adaptation" class="gradient-4 min-h-fit">
+    <h1 class="section-title">Domain adaptation</h1>
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
@@ -90,32 +123,32 @@
     </div>
   </div>
 
-  <div id="publications" class="bg-yellow-800 min-h-full">
-    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">List of publications</h1>
+  <div id="publications" class="gradient-5 min-h-full">
+    <h1 class="section-title">List of publications</h1>
     <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
-    <ul class="space-y-5 text-gray-500 list-decimal list-inside dark:text-gray-400">
-      <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
-      </li>
-      <li>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
-      </li>
-  </ul>
-</div>
+      <ul class="space-y-5 text-amber-50 list-decimal list-inside">
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+        </li>
+      </ul>
+    </div>
   </div>
 
 </body>
