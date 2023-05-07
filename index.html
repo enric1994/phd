@@ -5,26 +5,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
-  <!-- Title screen -->
-  <div class="bg-blue-200 min-h-full">
-    <h1 class="text-gray-900 text-6xl text-center pt-40 font-bold md:px-40 xl:px-96">Synthetic data for computer vision
+  <div id="title" class="bg-slate-800 min-h-full">
+    <h1
+      class="text-gray-900 text-6xl text-center pt-40 font-bold md:px-40 xl:px-96 bg-gradient-to-r from-pink-600 to-purple-800 bg-clip-text text-transparent">
+      Synthetic data for computer vision
       applications</h1>
-    <h2 class="text-4xl pt-32 text-center">a PhD thesis by <br><span class="font-bold">Enric Moreu</span></h2>
+    <h2 class="text-4xl pt-32 text-center text-amber-50">a PhD thesis by <br><span class="font-bold">Enric Moreu</span>
+    </h2>
     <div class="text-center pt-32">
-    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-      Download PDF (40MB)
-    </button>
-  </div>
-        
-      
+      <button class="md:text-xl bg-blue-500 hover:bg-blue-700 text-amber-50 font-bold py-2 px-4 rounded text-center">
+        Download thesis (40MB)
+      </button>
+    </div>
   </div>
 
-  <!-- Abstract -->
-  <div class="bg-green-200 min-h-full">
-    Abstract
+  <div id="abstract" class="bg-slate-900 min-h-fit">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+
+      <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
+          duis. Vel pretium lectus quam id leo in vitae. Ridiculus mus mauris vitae ultricies leo. Ridiculus mus mauris
+          vitae ultricies leo. Ridiculus mus mauris vitae ultricies leo.</p>
+
+      </div>
+      <div class="bg-white m-10 hidden lg:block max-w-xl aspect-square">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="domain-randomization" class="bg-green-800 min-h-fit">
+    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">Domain randomization</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+
+      <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
+          duis. Vel pretium lectus quam id leo in vitae.</p>
+      </div>
+      <div class="bg-blue-400 m-10 aspect-square max-w-xl">
+
+      </div>
+    </div>
+    <div class="p-5 hidden lg:block ">
+
+      <div class="bg-white mx-20 mb-4 h-3/5"></div>
+      <div class="text-xl text-amber-50 px-36 flex items-center justify-center">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="domain-adaptation" class="bg-purple-800 min-h-fit">
+    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">Domain adaptation</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2">
+
+      <div class="p-6 text-2xl text-amber-50 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
+          duis. Vel pretium lectus quam id leo in vitae.</p>
+      </div>
+      <div class="bg-blue-400 m-10 aspect-square max-w-xl">
+
+      </div>
+    </div>
+  </div>
+
+  <div id="publications" class="bg-yellow-800 min-h-full">
+    <h1 class="text-3xl p-6 font-bold flex items-center justify-center">List of publications</h1>
+    <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
+    <ul class="space-y-5 text-gray-500 list-decimal list-inside dark:text-gray-400">
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+      </li>
+  </ul>
+</div>
   </div>
 
 </body>
