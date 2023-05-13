@@ -1,7 +1,6 @@
 
 function init(THREE) {
     // Init ThreeJS
-    const container = document.querySelector("#canvas-container");
     const canvas = document.querySelector('#c');
     const scene = new THREE.Scene();
 
@@ -23,7 +22,7 @@ function init(THREE) {
 
     // Setup camera
     const fov = 20;
-    const aspect = container.clientWidth / container.clientHeight;  // the canvas default
+    const aspect = canvas.clientWidth / canvas.clientHeight;  // the canvas default
     const near = 1;
     const far = 400;
     const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
