@@ -36,8 +36,8 @@ Carousel
     .gradient-1 {
       @apply bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-300 via-green-400 to-rose-700;
     }
-    .gradient-dr {
-      @apply bg-gradient-to-b from-white via-purple-300 to-white;
+    .separator {
+      @apply my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-pink-600 to-transparent opacity-70;
     }
     .gradient-publications {
       @apply bg-gradient-to-b from-white via-pink-300 to-purple-400;
@@ -49,7 +49,8 @@ Carousel
 
   <div id="title" class="min-h-full gradient-1 pt-10">
     <canvas id="c" class="h-full w-full z-0 -mt-10 absolute"></canvas>
-    <div class="bg-white mx-5 p-5 opacity-90 rounded-md z-50 sm:px-5 md:mx-16 md:px-32 lg:mx-48 lg:px-40 xl:mx-60 2xl:mx-72">
+    <div
+      class="bg-white mx-5 p-5 opacity-90 rounded-md z-50 sm:px-5 md:mx-16 md:px-32 lg:mx-48 lg:px-40 xl:mx-60 2xl:mx-72">
       <h1 class="main-title tracking-tighter text-4xl text-center font-semibold sm:text-5xl xl:text-6xl 2xl:text-7xl">
         Exploring Synthetic Image Generation for Training Computer Vision Models under Data Scarcity</h1>
     </div>
@@ -68,7 +69,8 @@ Carousel
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
-        <p class="text-4xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
           duis. Vel pretium lectus quam id leo in vitae. Ridiculus mus mauris vitae ultricies leo. Ridiculus mus mauris
           vitae ultricies leo. Ridiculus mus mauris vitae ultricies leo.</p>
@@ -80,13 +82,17 @@ Carousel
     </div>
   </div>
 
+  <hr class="separator" />
+
+
   <div id="domain-randomization" class="min-h-fit">
     <h1 class="section-title">Domain randomization</h1>
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-2xl text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
 
-        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
           duis. Vel pretium lectus quam id leo in vitae.</p>
       </div>
@@ -99,11 +105,16 @@ Carousel
       <div class="bg-red-200 mx-20 mb-4 h-3/5"></div>
       <div class="text-xl text-slate-900 px-36 flex items-center justify-center">
 
-        <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore
           magna aliqua.</p>
       </div>
     </div>
   </div>
+
+
+  <hr class="separator" />
+
 
   <div id="domain-adaptation" class="min-h-fit">
     <h1 class="section-title">Domain adaptation</h1>
@@ -111,7 +122,8 @@ Carousel
 
       <div class="p-6 text-2xl text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
 
-        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
           duis. Vel pretium lectus quam id leo in vitae.</p>
       </div>
@@ -121,10 +133,13 @@ Carousel
     </div>
   </div>
 
+  <hr class="separator" />
+
+
   <div id="publications" class="min-h-full gradient-publications">
     <h1 class="section-title">List of publications</h1>
     <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
-      <ul class="space-y-5 text-slate-900 list-decimal list-inside text-4xl">
+      <ul class="space-y-5 text-slate-900 list-decimal list-inside text-3xl">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna.
