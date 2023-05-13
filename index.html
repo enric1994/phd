@@ -52,25 +52,21 @@ Carousel
 </head>
 
 <body>
-  
-  <div id="title" class=" gradient-1 min-h-full">
 
-    <div class="absolute">
-      <div class="bg-white m-5 p-5 opacity-90 rounded-md md:px-32 lg:mx-48 xl:mx-60 2xl:mx-96">
-      <h1
-        class="main-title tracking-tighter text-4xl text-center font-semibold md:text-5xl xl:text-6xl">
+  <div id="title" class=" gradient-1 min-h-full absolute">
+    <canvas id="c" class="h-full w-full z-0 absolute"></canvas>
+    <div class="bg-white m-5 p-5 opacity-90 rounded-md z-50 md:px-32 lg:mx-48 xl:mx-60 2xl:mx-96">
+      <h1 class="main-title tracking-tighter text-4xl text-center font-semibold md:text-5xl xl:text-6xl">
         Exploring Synthetic Image Generation for Training Computer Vision Models under Data Scarcity</h1>
-      </div>
-      <h2 class="text-4xl pt-32 text-center text-slate-900">a PhD thesis by <br><span class="font-bold">Enric
-          Moreu</span>
-      </h2>
-      <div class="text-center pt-32">
-        <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-extrabold py-2 px-4 rounded text-center">
-          Download thesis (40MB)
-        </button>
-      </div>
     </div>
-      <canvas id="c" class="h-full w-full"></canvas>
+    <h2 class="text-4xl pt-32 text-center text-slate-900">a PhD thesis by <br><span class="font-bold">Enric
+        Moreu</span>
+    </h2>
+    <div class="text-center pt-32 z-50 opacity-95">
+      <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-extrabold py-2 px-4 rounded text-center">
+        Download thesis (40MB)
+      </button>
+    </div>
   </div>
 
   <div id="abstract" class="min-h-fit bg-white">
