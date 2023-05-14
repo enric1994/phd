@@ -33,6 +33,9 @@ Carousel
     .section-title {
       @apply text-3xl md:text-5xl p-6 font-bold flex items-center justify-center bg-gradient-to-r from-pink-600 to-purple-500 bg-clip-text text-transparent;
     }
+    .p-text {
+      @apply text-xl lg:text-3xl;
+    }
     .gradient-1 {
       @apply bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-fuchsia-300 via-green-400 to-rose-700;
     }
@@ -69,7 +72,7 @@ Carousel
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
-        <p class="text-3xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
           duis. Vel pretium lectus quam id leo in vitae. Ridiculus mus mauris vitae ultricies leo. Ridiculus mus mauris
@@ -94,7 +97,7 @@ Carousel
     <h1 class="section-title">Domain randomization</h1>
 
     <div class="mx-5 lg:mx-28 xl:mx-56">
-      <img class="w-80 float-left aspect-[1/1] rounded-lg  object-cover mr-6
+      <img class="w-80 pt-2 float-left aspect-[1/1] rounded-lg  object-cover mr-6
       [clip-path:circle(70%_at_20%_30%)]
       [shape-outside:circle(70%_at_20%_30%)]
       lg:[clip-path:polygon(0%_0%,100%_0%,75%_100%,0%_100%)]
@@ -109,7 +112,7 @@ Carousel
       "
       src="images/crowd.png"
       />
-      <p class="text-3xl">
+      <p class="p-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
@@ -130,7 +133,7 @@ Carousel
   <div id="domain-adaptation" class="min-h-fit">
     <h1 class="section-title">Domain adaptation</h1>
     <div class="mx-5 lg:mx-28 xl:mx-56">
-      <img class="w-80 float-right aspect-[1/1] rounded-lg  object-cover mr-6
+      <img class="w-80 pt-2 float-right aspect-[1/1] rounded-lg  object-cover mr-6
       [clip-path:circle(70%_at_70%_20%)]
       [shape-outside:circle(70%_at_70%_20%)]
       lg:[clip-path:polygon(0%_0%,100%_0%,100%_100%,25%_100%)]
@@ -145,7 +148,7 @@ Carousel
       "
       src="images/crowd.png"
       />
-      <p class="text-3xl">
+      <p class="p-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
@@ -164,7 +167,7 @@ Carousel
   <div id="publications" class="min-h-full gradient-publications">
     <h1 class="section-title">List of publications</h1>
     <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
-      <ul class="space-y-5 text-slate-900 list-decimal list-inside text-3xl">
+      <ul class="space-y-5 text-slate-900 list-decimal list-inside p-text">
         <li>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. In dictum non consectetur a erat nam at lectus urna.
