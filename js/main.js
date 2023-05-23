@@ -10,7 +10,7 @@ var HOW_MANY_PENGUINS = 36;
 var MODEL_SCALE = 1.5;
 var ROTATION_SPEED = 0.03;
 var POSITION_SPEED = 0.1;
-var FPS = 30;
+var FPS=30;
 
 var model;
 function main() {
@@ -95,13 +95,8 @@ function main() {
     }
     requestAnimationFrame(render);
 
-    window.addEventListener('resize', onWindowResize, false);
+    
 
-    function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-
-    }
 }
 
 main();
