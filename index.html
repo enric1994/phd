@@ -72,22 +72,24 @@ Carousel
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
       <div class="p-6 text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
-        <p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
-          duis. Vel pretium lectus quam id leo in vitae. Ridiculus mus mauris vitae ultricies leo. Ridiculus mus mauris
-          vitae ultricies leo. Ridiculus mus mauris vitae ultricies leo.</p>
+        <p class="p-text">The utilization of synthetic data in computer vision tasks is subject to certain limitations
+          primarily attributed to the occurrence of the domain shift. This phenomenon arises when the distribution of
+          data in the training set diverges from that in the test set. Synthetic data, being generated under controlled
+          circumstances, possesses a dissimilar distribution compared to real-world data. Consequently, computer vision
+          models that are trained on synthetic data exhibit a biased understanding of the target domain, hampering their
+          ability to effectively generalize.
+        </p>
 
       </div>
       <img class="m-10 w-5/6 aspect-[1/1] object-cover rounded-lg mx-auto
+      sm:w-3/6
+      lg:w-4/6
       xl:aspect-[2/1]
       xl:w-5/6
-      "
-      src="images/crowd.png"
-      />
+      " src="images/crowd.png" />
 
-      </div>
     </div>
+  </div>
   </div>
 
   <hr class="separator" />
@@ -109,18 +111,14 @@ Carousel
       2xl:w-10/12
       2xl:aspect-[2/1]
 
-      "
-      src="images/crowd.png"
-      />
+      " src="images/crowd.png" />
       <p class="p-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
-          duis. Vel pretium lectus quam id leo in vitae.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
-          duis. Vel pretium lectus quam id leo in vitae.
+        Domain randomization is a strategy utilized to alleviate the challenges posed by domain shift. This technique
+        involves introducing variations in object textures, background images, and lighting conditions within a semantic
+        segmentation task. The underlying goal of domain randomization is to generate a diverse set of synthetic data
+        that encompasses a wide range of variations. By exposing the model to these varied environments during training,
+        it becomes capable of perceiving real-world data as merely another variation, even if some of the synthetic
+        variations may seem unrealistic to human observers.
       </p>
     </div>
 
@@ -145,18 +143,13 @@ Carousel
       2xl:w-10/12
       2xl:aspect-[2/1]
 
-      "
-      src="images/crowd.png"
-      />
+      " src="images/crowd.png" />
       <p class="p-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
-          duis. Vel pretium lectus quam id leo in vitae.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna. Non consectetur a erat nam at lectus urna
-          duis. Vel pretium lectus quam id leo in vitae.
+        Unlike domain randomization, domain adaptation aims to make the data more realistic by minimising the gap
+        between the source domain and the target domain. Techniques like feature alignment and adversarial learning can
+        be used for adaptation. By leveraging these approaches and synthetic data, models can adapt their knowledge and
+        perform well in target domains. This approach has been shown to be effective in reducing the domain gap,
+        especially when there is limited labeled data in the target domain.
       </p>
     </div>
   </div>
@@ -164,29 +157,32 @@ Carousel
   <hr class="separator" />
 
 
-  <div id="publications" class="min-h-full gradient-publications">
+  <div id="publications" class="min-h-full">
     <h1 class="section-title">List of publications</h1>
     <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
       <ul class="space-y-5 text-slate-900 list-decimal list-inside p-text">
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+          <strong>Enric Moreu*</strong>, Eric Arazo*, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Self-Supervised and
+            Semi-Supervised Polyp Segmentation using Synthetic Data”</i>. In <i>International Joint Conference on Neural Networks (IJCNN)</i>.
+          June 2023.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+          <strong>Enric Moreu</strong>, Alex Martinelli, Martina Naughton, Philip Kelly, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Fashion CUT: Unsupervised
+          domain adaptation for visual pattern classification in clothes using synthetic data and pseudo-labels”</i>. In
+          <i>Scandinavian Conference on Image Analysis (SCIA)</i>. April 2023.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+          <strong>Enric Moreu</strong>, Eric Arazo, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Joint one-sided synthetic unpaired image
+          translation and segmentation for colorectal cancer prevention”</i>. In <i>Expert Systems, e13137</i>. September 2022.
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+          <strong>Enric Moreu</strong>, Diego Ortego, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Domain Randomization for Object Counting”</i>.
+          In <i>Irish Conference on Artificial Intelligence and Cognitive Science (AICS)</i>. December 2021.
+
         </li>
         <li>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. In dictum non consectetur a erat nam at lectus urna.
+          <strong>Enric Moreu</strong>, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Synthetic data for unsupervised polyp segmentation”</i>. In
+          <i>Irish Conference on Artificial Intelligence and Cognitive Science (AICS)</i>. December 2021.
         </li>
       </ul>
     </div>
