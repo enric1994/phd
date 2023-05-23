@@ -6,18 +6,11 @@ import { DRACOLoader } from './lib/DRACOLoader.js';
 import { init } from './init.js'
 import { get_lights } from './lights.js'
 
-import Stats from 'https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js'
-
-// Stats
-// const stats = new Stats()
-// stats.showPanel(0) // 0: fps, 1: ms, 2: mb, 3+: custom
-// document.body.appendChild(stats.dom)
-
 var HOW_MANY_PENGUINS = 36;
 var MODEL_SCALE = 1.5;
 var ROTATION_SPEED = 0.03;
 var POSITION_SPEED = 0.1;
-var FPS=30;
+var FPS = 30;
 
 var model;
 function main() {
@@ -34,14 +27,13 @@ function main() {
         // gltf-pipeline -i model.glb -o model.gltf -d
         './gltf/penguin.glb',
         function (gltf) {
-            for (let i = 0; i < HOW_MANY_PENGUINS; i++) { // create 5 copies of the model
+            for (let i = 0; i < HOW_MANY_PENGUINS; i++) {
 
                 const texture = textureLoader.load(`./textures/texture${i}.jpg`);
 
                 model = gltf.scene.clone();
                 model.scale.set(MODEL_SCALE);
                 model.name = `model-${i}`;
-                // directions[`model-${i}`] = Math.random() * Math.PI * 2;
 
                 model.position.x = Math.random() * 80 - 60;
                 model.position.z = Math.random() * 100;
@@ -64,14 +56,9 @@ function main() {
                         node.receiveShadow = true;
                         node.flatShading = true;
                         node.blending = THREE.NoBlending;
-                        // const newMaterial = new THREE.MeshPhongMaterial({ color: node.material.color });
-                        // node.material = newMaterial;
-                        const material = node.material.clone(); // create a new material instance for this mesh
-                        material.map = texture; // assign the texture to this material instance
+                        const material = node.material.clone();
+                        material.map = texture;
                         node.material = material;
-
-                        // const texture = textureLoader.load(`./textures/texture${i}.jpg`);
-                        // node.material.map = texture;
 
                     }
                 });
@@ -82,7 +69,6 @@ function main() {
 
 
     function render() {
-        // stats.update()
         setTimeout(function () {
 
             for (let i = 0; i < HOW_MANY_PENGUINS; i++) {
@@ -109,7 +95,16 @@ function main() {
     }
     requestAnimationFrame(render);
 
+    window.addEventListener('resize', onWindowResize, false);
+
+    function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+
+    }
 }
 
 main();
+
+
 
