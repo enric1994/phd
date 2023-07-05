@@ -52,9 +52,8 @@ function main() {
                 model.scale.set(MODEL_SCALE, MODEL_SCALE, MODEL_SCALE)
                 model.traverse(function (node) {
                     if (node instanceof THREE.Mesh) {
-                        node.castShadow = true;
-                        node.receiveShadow = true;
-                        node.flatShading = true;
+                        node.castShadow = false;
+                        node.receiveShadow = false;
                         node.blending = THREE.NoBlending;
                         const material = node.material.clone();
                         material.map = texture;
