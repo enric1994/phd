@@ -52,13 +52,15 @@
     <div class="text-center pt-32 pb-5 z-50 opacity-95">
       <div>
 
-        <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
+        <button
+          class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
           Thesis presentation slides
         </button>
       </div>
       <div class="mt-4">
 
-        <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
+        <button
+          class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
           Download thesis (50MB)
         </button>
       </div>
@@ -67,24 +69,14 @@
   </div>
 
   <div id="abstract" class="min-h-fit bg-white z-50">
-    <div class="grid grid-cols-1 lg:grid-cols-2 z-50">
 
-      <div class="p-6 text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
-        <p class="p-text">The utilization of synthetic data in computer vision tasks is subject to certain limitations
-          primarily attributed to the occurrence of the domain shift. This phenomenon arises when the distribution of
-          data in the training set diverges from that in the test set. Synthetic data, being generated under controlled
-          circumstances, possesses a dissimilar distribution compared to real-world data. Consequently, computer vision
-          models that are trained on synthetic data exhibit a biased understanding of the target domain, hampering their
-          ability to effectively generalize.
-        </p>
-
-      </div>
-      <img class="m-10 w-5/6 aspect-[1/1] object-cover rounded-lg mx-auto
-      sm:w-3/6
-      lg:w-4/6
-      xl:aspect-[2/1]
-      xl:w-5/6
-      " src="images/crowd.png" />
+    <div class="p-6 text-slate-900 md:text-3xl text-left lg:px-52 xl:text-4xl">
+      <p class="p-text">My research aims to address the challenge of data hungry deep learning models by generating
+        synthetic images that can effectively train computer vision models to solve tasks such as object counting, polyp
+        segmentation, and pattern classification. The work carried out explores the use of various techniques to ensure
+        effective use of synthetic data, including domain randomization and domain adaptation in both self- and
+        semi-supervised setups.
+      </p>
 
     </div>
   </div>
@@ -141,7 +133,7 @@
       2xl:w-10/12
       2xl:aspect-[2/1]
 
-      " src="images/crowd.png" />
+      " src="images/colon.png" />
       <p class="p-text">
         Unlike domain randomization, domain adaptation aims to make the data more realistic by minimising the gap
         between the source domain and the target domain. Techniques like feature alignment and adversarial learning can
