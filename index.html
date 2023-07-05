@@ -1,14 +1,6 @@
 <!doctype html>
 <html>
 
-<!-- TODO
-Add links "decoration-amber-500"
-Icons under name
-Resize canvas onResize
-Polygon images DR and DA
-Carousel
--->
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,16 +34,13 @@ Carousel
     .separator {
       @apply my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-pink-600 to-transparent opacity-70;
     }
-    .gradient-publications {
-      @apply bg-gradient-to-b from-white via-pink-300 to-purple-400;
-    }
   </style>
 </head>
 
 <body>
 
-  <div id="title" class="min-h-full gradient-1 pt-10">
-    <canvas id="c" class="h-full w-full z-0 -mt-10 absolute"></canvas>
+  <div id="title" class="h-full gradient-1 pt-10">
+    <canvas id="c" class="min-h-full w-full z-0 absolute top-0"></canvas>
     <div
       class="bg-white mx-5 p-5 opacity-90 rounded-md z-50 sm:px-5 md:mx-16 md:px-32 lg:mx-48 lg:px-40 xl:mx-60 2xl:mx-72">
       <h1 class="main-title tracking-tighter text-4xl text-center font-semibold sm:text-5xl xl:text-6xl 2xl:text-7xl">
@@ -61,15 +50,24 @@ Carousel
         Moreu</span>
     </h2>
     <div class="text-center pt-32 pb-5 z-50 opacity-95">
-      <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded text-center">
-        Download thesis (50MB)
-      </button>
+      <div>
+
+        <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
+          Thesis presentation slides
+        </button>
+      </div>
+      <div class="mt-4">
+
+        <button class="md:text-xl bg-pink-500 hover:bg-pink-700 text-white font-semibold w-72 py-2 px-4 rounded text-center">
+          Download thesis (50MB)
+        </button>
+      </div>
     </div>
 
   </div>
 
-  <div id="abstract" class="min-h-fit bg-white">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
+  <div id="abstract" class="min-h-fit bg-white z-50">
+    <div class="grid grid-cols-1 lg:grid-cols-2 z-50">
 
       <div class="p-6 text-slate-900 md:text-3xl text-left lg:w-3/4 lg:ml-32 xl:text-4xl">
         <p class="p-text">The utilization of synthetic data in computer vision tasks is subject to certain limitations
@@ -162,27 +160,35 @@ Carousel
     <div class="p-6 text-lg md:px-40 xl:scroll-px-96 xl:text-2xl">
       <ul class="space-y-5 text-slate-900 list-decimal list-inside p-text">
         <li>
-          <strong>Enric Moreu*</strong>, Eric Arazo*, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Self-Supervised and
-            Semi-Supervised Polyp Segmentation using Synthetic Data”</i>. In <i>International Joint Conference on Neural Networks (IJCNN)</i>.
-          June 2023.
-        </li>
-        <li>
-          <strong>Enric Moreu</strong>, Alex Martinelli, Martina Naughton, Philip Kelly, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Fashion CUT: Unsupervised
-          domain adaptation for visual pattern classification in clothes using synthetic data and pseudo-labels”</i>. In
-          <i>Scandinavian Conference on Image Analysis (SCIA)</i>. April 2023.
-        </li>
-        <li>
-          <strong>Enric Moreu</strong>, Eric Arazo, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Joint one-sided synthetic unpaired image
-          translation and segmentation for colorectal cancer prevention”</i>. In <i>Expert Systems, e13137</i>. September 2022.
-        </li>
-        <li>
-          <strong>Enric Moreu</strong>, Diego Ortego, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Domain Randomization for Object Counting”</i>.
+          <strong>Enric Moreu</strong>, Diego Ortego, Kevin McGuinness, Noel E. O’Connor. <i
+            class="decoration-pink-600 underline">“Domain Randomization for Object Counting”</i>.
           In <i>Irish Conference on Artificial Intelligence and Cognitive Science (AICS)</i>. December 2021.
 
         </li>
         <li>
-          <strong>Enric Moreu</strong>, Kevin McGuinness, Noel E. O’Connor. <i class="decoration-pink-600 underline">“Synthetic data for unsupervised polyp segmentation”</i>. In
+          <strong>Enric Moreu</strong>, Kevin McGuinness, Noel E. O’Connor. <i
+            class="decoration-pink-600 underline">“Synthetic data for unsupervised polyp segmentation”</i>. In
           <i>Irish Conference on Artificial Intelligence and Cognitive Science (AICS)</i>. December 2021.
+        </li>
+        <li>
+          <strong>Enric Moreu</strong>, Eric Arazo, Kevin McGuinness, Noel E. O’Connor. <i
+            class="decoration-pink-600 underline">“Joint one-sided synthetic unpaired image
+            translation and segmentation for colorectal cancer prevention”</i>. In <i>Expert Systems, e13137</i>.
+          September 2022.
+        </li>
+        <li>
+          <strong>Enric Moreu</strong>, Alex Martinelli, Martina Naughton, Philip Kelly, Noel E. O’Connor. <i
+            class="decoration-pink-600 underline">“Fashion CUT: Unsupervised
+            domain adaptation for visual pattern classification in clothes using synthetic data and pseudo-labels”</i>.
+          In
+          <i>Scandinavian Conference on Image Analysis (SCIA)</i>. April 2023.
+        </li>
+        <li>
+          <strong>Enric Moreu*</strong>, Eric Arazo*, Kevin McGuinness, Noel E. O’Connor. <i
+            class="decoration-pink-600 underline">“Self-Supervised and
+            Semi-Supervised Polyp Segmentation using Synthetic Data”</i>. In <i>International Joint Conference on Neural
+            Networks (IJCNN)</i>.
+          June 2023.
         </li>
       </ul>
     </div>
