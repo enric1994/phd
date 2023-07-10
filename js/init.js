@@ -7,11 +7,7 @@ function init(THREE) {
   // Create renderer
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, logarithmicDepthBuffer: true });
   renderer.stencil = true;
-  if (window.devicePixelRatio < 1.5) {
-    renderer.setPixelRatio(window.devicePixelRatio);
-  } else {
-    renderer.setPixelRatio(2);
-  }
+  renderer.setPixelRatio(1);
   renderer.shadowMapSoft = true;
   renderer.powerPreference = "high-performance";
   renderer.shadowMap.enabled = true

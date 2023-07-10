@@ -8,9 +8,9 @@ import { get_lights } from './lights.js'
 
 var HOW_MANY_PENGUINS = 36;
 var MODEL_SCALE = 1.5;
-var ROTATION_SPEED = 0.03;
-var POSITION_SPEED = 0.1;
-var FPS=30;
+var ROTATION_SPEED = 0.02;
+var POSITION_SPEED = 0.05;
+var FPS=60;
 
 var model;
 function main() {
