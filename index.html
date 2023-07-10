@@ -3,20 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="PhD webpage of Enric Moreu">
+  <meta name="keywords" content="phd, research, Enric Moreu">
+  <meta name="author" content="Enric Moreu">
+  <meta name="theme-color" content="white">
+  <meta property='og:title' content='PhD | Enric Moreu' />
+  <meta property='og:image' content='https://github.com/enric1994/phd/raw/master/demo.png' />
+  <meta property='og:description' content='PhD webpage of Enric Moreu' />
+  <meta property='og:url' content='https://phd.enricmor.eu' />
   <title>PhD - Enric Moreu</title>
   <script type="module" src="js/main.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // tailwind.config = {
-    //   theme: {
-    //     extend: {
-    //       fontFamily: {
-    //     kanit: ['Proxima Nova', 'sans-serif'],
-    //   },
-    //     }
-    //   }
-    // }
+    fetch('https://api.countapi.xyz/hit/phd.enricmor.eu/visits')
+      .then(response => response.json())
+      .then(data => null);
+
   </script>
 
   <style type="text/tailwindcss">
